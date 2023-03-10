@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Character</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+padding: 15px;
+background-color: #00C9A7;
+background-image: url("https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/background2.jpeg?raw=true");
+background-repeat:no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+    background-position: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #abff03;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #961509;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid red;
+  border-top: none;
+  text-align: center;
+  height: 100%;
+  background-color: black;;
+background-repeat: no-repeat;
+background-size: 100% auto;
+    background-position: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 4px 4px 4px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffd3ec;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+  .collapsible {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align:  center;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: green;
+}
+
+.content1 {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: yellow;
+  text-align: center;
+}
+
+.content1 ul {
+text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <h2 style="color:#c4f7fb;text-align:center;">Héros adolescents</h2>
+   <a href="index.html">Accueil</a>
+   <a href="about.html">À propos</a>
+   <a href="news.html">Actualités</a>
+   <a href="character.html">Personnage</a>
+   <a href="story.html">Histoire</a>
+   <a href="location.html">Emplacement</a>
+   <a href="vehicles.html">Véhicules</a>
+</div>
+
+<div class="tab">
+<bouton class="tablinks" onclick="openNav()">&#9776;</bouton>
+   <button class="tablinks" onclick="openCity(event, 'TH')">Héros adolescents</button>
+   <button class="tablinks" onclick="openCity(event, 'THC')">Héros adolescents : enfants</button>
+   <button class="tablinks" onclick="openCity(event, 'THA')">Héros adolescents : adultes</button>
+   <button class="tablinks" onclick="openCity(event, 'VRTH')">Héros adolescents VR</button>
+</div>
+<div style="font-weight:bold;background-color:blue;text-align:center;color:yellow;padding:10px;">
+   <h1>Annonce des héros adolescents</h1>
+   <p id="announcements"></p>
+</div>
+
+<div id="TH" class="tabcontent">
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:1px;">
+<h3>Héros adolescents</h3>
+</div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;">
+<h1>Personnages</h1>
+<p>La série de livres Teenager Heroes mettait en vedette de nombreux personnages à travers de nombreuses histoires et saisons. La série de livres Teenager Heroes contient de nombreux personnages conçus par l'équipe Teenager Heroes. Tous nos personnages dans toutes les histoires de Teenager Heroes sont répertoriés ici :</p>
+</div>
+<br>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;text-align:left;">
+<h3 style="text-align:center;">Hu Jie（虎杰）</h3>
+<ul>
+   <li>Nom : Hu Jie</li>
+<li>Sexe : masculin</li>
+<li>Âge : 14 ans</li>
+<li>Ethnie : chinoise</li>
+<li>Profession : Héros</li>
+<li>Description : Hu Jie, un héros courageux et rapide dans Teenager Heroes. Le frère cadet de Li Hui.</li>
+<li>Personnalité :
+   <ul>
+<li>Il est courageux. Il a protégé sa sœur lorsqu'ils ont rencontré des problèmes et a également osé affronter de vilains méchants.</li>
+<li>Il est aussi rapide à faire des choses mais très impatient d'attendre.</li>
+<li>Joueur, il pouvait être joueur lorsqu'il faisait des choses importantes. </li>
+<li>Amusant, il adore faire rire tout le monde, surtout sa sœur.</li>
+   </ul>
+   </li>
+<li>Point faible :
+   <ul>
+<li>Impatient, il est impatient la plupart du temps et ne pouvait pas attendre les autres.</li>
+   </ul>
+<li>Puissance :
+<ul>
+   <li>Vitesse
+   <li>En courant, il pouvait courir très vite d'un emplacement A à un emplacement B en peu de temps. Il pouvait courir aussi vite que l'éclair. </li>
+   <li>Tornade, il pourrait courir très vite pour créer une petite tornade à l'intérieur d'une petite zone qui créera des vents forts. </li>
+   <li>Générateur d'énergie, il pourrait générer de l'énergie électrique en utilisant sa vitesse, ce qui pourrait restaurer un bâtiment hors tension.</li>
+   </ul>
+   </li>
+<li>Gadget :
+   <ul>
+<li>Bouclier, il pouvait se protéger des attaques d'ennemis et de méchants en se cachant derrière son bouclier.</li>
+   </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;text-align:left;">
+   <h3 style="text-align:center;">Li Hui （丽惠）</h3>
+   <ul>
+     <li>Nom : Li Hui</li>
+     <li>Sexe : féminin</li>
+     <li>Âge : 14 ans</li>
+     <li>Ethnie : chinoise</li>
+   <li>Profession : Héros</li>
+   <li>Description : Li Hui, la sœur aînée de Hu Jie. Un héros timide mais intelligent dans Teenager Heroes. </li>
+   <li>Personnalité :
+     <ul>
+     <li>Li Hui est intelligente, elle résout facilement n'importe quel problème difficile.</li>
+     <li>Li Hui est aussi timide, elle a peur de la plupart des gens qu'elle rencontre.</li>
+     <li>Douce et attentionnée, elle pouvait être prudente lorsqu'elle s'occupait de son jeune frère.</li>
+     </ul>
+   </li>
+   <li>Point faible :
+     <ul>
+     <li>Timide, elle a peur d'affronter la plupart des ennemis. Elle est facilement effrayée par des ennemis effrayants.</li>
+     </ul>
+   </li>
+<li>Puissance
+   <ul>
+     <li>Technologie
+       <ul>
+<li>En informatique, elle pourrait faire de l'informatique, comme configurer un ordinateur, etc. Elle pourrait configurer un nouvel ordinateur pour faire ce dont elle a besoin.</li>
+<li>En piratant, elle pourrait pirater d'autres infrastructures technologiques et en faire des logiciels inaccessibles ou non sécurisés.</li>
+       </ul>
+     </li>
+   </ul>
+   </li>
+<li>Gadget
+   <ul>
+<li>Bots, elle a 2 bots qui l'accompagnent à tout moment et qui pourraient l'aider à transporter des choses, à la défendre, etc. Elle pourrait programmer les bots pour qu'ils fassent tout ce dont elle a besoin.</li>
+   </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;text-align:left;">
+   <h3 style="text-align:center;">Min Li (敏丽)</h3>
+   <ul>
+   <li>Nom : Min Li</li>
+   <li>Sexe : féminin</li>
+   <li>Âge : 21 ans</li>
+   <li>Ethnie : chinoise</li>
+   <Li>Profession : Héros</li>
+   <li>Description : Min Li, la sœur de Li Hui et Hu Jie est une héroïne et une étudiante universitaire.</li>
+   <li>Personnalité : <ul>
+     <li>Min Li est intelligente, elle a toujours un moyen de résoudre les problèmes auxquels elle est confrontée.</li>
+     <li>Min Li est prudente, elle prend toujours soin de ses jeunes frères et sœurs, quoi qu'il arrive.</li>
+     <li>Min Li a aussi de bonnes manières, elle est toujours respectueuse et polie envers tout le monde et leurs sentiments.</li>
+     </ul>
+   </li>
+   <li>Faiblesse<ul>
+   <li>Lent, Min Li est très lent à tout faire, ce qui facilite l'évasion des méchants.</li>
+     </ul>
+   </li>
+   <li>Puissance<ul>
+   <li>Créatif<ul>
+   <li>En dessinant, Min Li pouvait dessiner tout ce qu'elle voulait et en faire un produit physique en quelques minutes.</li>
+   <li>Conception, Min Li est très douée pour la conception d'objets. Min Li pouvait concevoir n'importe quel objet avec son pouvoir.</li>
+     </ul>
+     </li>
+     </ul>
+     </li>
+   <li>Gadget<ul>
+   <li>Stylo de dessin, c'est un stylo permettant à Min Li de dessiner tout ce qu'elle veut et de le transformer en réalité.</li>
+     </ul>
+     </li>
+     </ul>
+     </div>
+     <br>
+     <br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;text-align:left;">
+<h3 style="text-align:center;">Hua Mei (花美)</h3>
+     <ul>
+       <li>Nom : Hua Mei</li>
+       <li>Sexe : féminin</li>
+       <li>Âge : 40 ans</li>
+       <li>Ethnie : chinoise</li>
+       <li>Profession : héros, scientifique</li>
+       <li>Description : La mère de Li Hui, Hu Jie et Min Li, un héros de Perle.</li>
+       <li>Personnalité :<ul>
+       <li>Gentillesse, Hua Mei a une tonne de gentillesse envers ses enfants et tout le monde. Hua Mei est toujours très gentille avec Min Li, Li Hui et Hu Jie aussi.</li>
+       <li>Honnête, Hua Mei est très honnête lorsqu'elle fait des choses. Elle dira son erreur et s'en excusera et ne mentira jamais.</li>
+       <li>Intelligent, Hua Mei est très intelligent et intelligent. Elle pouvait résoudre tous les problèmes auxquels elle était confrontée, où qu'elle se trouve et de toute façon.</li>
+         </ul>
+       </li>
+       <li>Faiblesse<ul>
+       <li>Vulnérable, Hua Mei est très vulnérable aux cibles, à la maladie et est souvent exploitée de manière inattendue.</li>
+         </ul>
+       </li>
+       <li>Puissance<ul>
+         <li>Ingénierie, Hua Mei pouvait créer n'importe quel type d'objet qu'elle voulait.</li>
+         </ul>
+       </li>
+       <li>Gadget<ul>
+       <li>Solidizer, Hua Mei pouvait imprimer n'importe quel type d'objets et d'éléments qu'elle fabriquait à utiliser.</li>
+     </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;text-align:left;">
+     <h3 style="text-align:center;">Ming Hao (明豪)</h3>
+     <ul>
+       <li>Nom : Ming Hao</li>
+       <li>Sexe : masculin</li>
+       <li>Âge : 40 ans</li>
+       <li>Ethnie : chinoise</li>
+       <li>Profession : héros, scientifique</li>
+       <li>Description : Le père des trois frères et sœurs chinois, Li Hui, Hu Jie et Min Li, un héros de Perle.</li>
+       <li>Personnalité : <ul>
+       <li>Protecteur, Ming Hao est très protecteur envers ses enfants, Min Li, Hu Jie et Li Hui. Il protège toujours ses enfants des ennuis et des préjudices.</li>
+       <li> Gentil, Ming Hao est très gentil avec ses enfants et ses amis. Il utilise toujours des mots gentils aussi.</li>
+       <li>Utile, Ming Hao est très utile. Ming Hao a toujours aidé avec tout ce qu'il pouvait, quoi qu'il arrive.</li>
+         </ul>
+       </li>
+       <li>Faiblesse<ul>
+         <li>Oublié, Ming Hao est très oublieux et oublie toujours les choses dont il avait besoin.</li>
+         </ul>
+       </li>
+       <li>Puissance<ul>
+       <li>Super force, Ming Hao a une super force et peut frapper et soulever tout ce qu'il veut.</li>
+         </ul>
+       </li>
+       <li>Gadget<ul>
+         <li>Gants spéciaux, Ming Hao a des gants spéciaux qui permettent à Ming Hao d'utiliser une super force.</li>
+         </ul>
+       </li>
+     </ul>
+    </div>
+</div>
+</div>
+
+<div id="THC" class="tabcontent">
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:1px;">
+<h3>Héros adolescents : enfants</h3>
+</div>
+<br>
+   <div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;text-align:left;">
+     <h1>Personnages</h1>
+<p>La série de livres Teenager Heroes mettait en vedette de nombreux personnages à travers de nombreuses histoires et saisons. La série de livres Teenager Heroes contient de nombreux personnages conçus par l'équipe Teenager Heroes. Tous nos personnages dans toutes les histoires de Teenager Heroes sont répertoriés ici :</p>
+</div>
+<br>
+<br>
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;text-align:left;">
+<h3 style="text-align:center;">Hu Jie（虎杰）</h3>
+<ul>
+   <li>Nom : Hu Jie</li>
+<li>Sexe : masculin</li>
+<li>Âge : 14 ans</li>
+<li>Ethnie : chinoise</li>
+<li>Profession : Héros</li>
+<li>Description : Hu Jie, un héros courageux et rapide dans Teenager Heroes. Le frère cadet de Li Hui.</li>
+<li>Personnalité :
+   <ul>
+<li>Il est courageux. Il a protégé sa sœur lorsqu'ils ont rencontré des problèmes et a également osé affronter de vilains méchants.</li>
+<li>Il est aussi rapide à faire des choses mais très impatient d'attendre.</li>
+<li>Joueur, il pouvait être joueur lorsqu'il faisait des choses importantes. </li>
+<li>Amusant, il adore faire rire tout le monde, surtout sa sœur.</li>
+   </ul>
+   </li>
+<li>Point faible :
+   <ul>
+<li>Impatient, il est impatient la plupart du temps et ne pouvait pas attendre les autres.</li>
+   </ul>
+<li>Puissance :
+<ul>
+   <li>Vitesse
+   <li>En courant, il pouvait courir très vite d'un emplacement A à un emplacement B en peu de temps. Il pouvait courir aussi vite que l'éclair. </li>
+   <li>Tornade, il pourrait courir très vite pour créer une petite tornade à l'intérieur d'une petite zone qui créera des vents forts. </li>
+   <li>Générateur d'énergie, il pourrait générer de l'énergie électrique en utilisant sa vitesse, ce qui pourrait restaurer un bâtiment hors tension.</li>
+   </ul>
+   </li>
+<li>Gadget :
+   <ul>
+<li>Bouclier, il pouvait se protéger des attaques d'ennemis et de méchants en se cachant derrière son bouclier.</li>
+   </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;text-align:left;">
+   <h3 style="text-align:center;">Li Hui （丽惠）</h3>
+   <ul>
+     <li>Nom : Li Hui</li>
+     <li>Sexe : féminin</li>
+     <li>Âge : 14 ans</li>
+     <li>Ethnie : chinoise</li>
+   <li>Profession : Héros</li>
+   <li>Description : Li Hui, la sœur aînée de Hu Jie. Un héros timide mais intelligent dans Teenager Heroes. </li>
+   <li>Personnalité :
+     <ul>
+     <li>Li Hui est intelligente, elle résout facilement n'importe quel problème difficile.</li>
+     <li>Li Hui est aussi timide, elle a peur de la plupart des gens qu'elle rencontre.</li>
+     <li>Douce et attentionnée, elle pouvait être prudente lorsqu'elle s'occupait de son jeune frère.</li>
+     </ul>
+   </li>
+   <li>Point faible :
+     <ul>
+     <li>Timide, elle a peur d'affronter la plupart des ennemis. Elle est facilement effrayée par des ennemis effrayants.</li>
+     </ul>
+   </li>
+<li>Puissance
+   <ul>
+     <li>Technologie
+       <ul>
+<li>En informatique, elle pourrait faire de l'informatique, comme configurer un ordinateur, etc. Elle pourrait configurer un nouvel ordinateur pour faire ce dont elle a besoin.</li>
+<li>En piratant, elle pourrait pirater d'autres infrastructures technologiques et en faire des logiciels inaccessibles ou non sécurisés.</li>
+       </ul>
+     </li>
+   </ul>
+   </li>
+<li>Gadget
+   <ul>
+<li>Bots, elle a 2 bots qui l'accompagnent à tout moment et qui pourraient l'aider à transporter des choses, à la défendre, etc. Elle pourrait programmer les bots pour qu'ils fassent tout ce dont elle a besoin.</li>
+   </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;text-align:left;">
+   <h3 style="text-align:center;">Min Li (敏丽)</h3>
+   <ul>
+   <li>Nom : Min Li</li>
+   <li>Sexe : féminin</li>
+   <li>Âge : 21 ans</li>
+   <li>Ethnie : chinoise</li>
+   <Li>Profession : Héros</li>
+   <li>Description : Min Li, la sœur de Li Hui et Hu Jie est une héroïne et une étudiante universitaire.</li>
+   <li>Personnalité : <ul>
+     <li>Min Li est intelligente, elle a toujours un moyen de résoudre les problèmes auxquels elle est confrontée.</li>
+     <li>Min Li est prudente, elle prend toujours soin de ses jeunes frères et sœurs, quoi qu'il arrive.</li>
+     <li>Min Li a aussi de bonnes manières, elle est toujours respectueuse et polie envers tout le monde et leurs sentiments.</li>
+     </ul>
+   </li>
+   <li>Faiblesse<ul>
+   <li>Lent, Min Li est très lent à tout faire, ce qui facilite l'évasion des méchants.</li>
+     </ul>
+   </li>
+   <li>Puissance<ul>
+   <li>Créatif<ul>
+   <li>En dessinant, Min Li pouvait dessiner tout ce qu'elle voulait et en faire un produit physique en quelques minutes.</li>
+   <li>Conception, Min Li est très douée pour la conception d'objets. Min Li pouvait concevoir n'importe quel objet avec son pouvoir.</li>
+     </ul>
+     </li>
+     </ul>
+     </li>
+   <li>Gadget<ul>
+   <li>Stylo de dessin, c'est un stylo permettant à Min Li de dessiner tout ce qu'elle veut et de le transformer en réalité.</li>
+     </ul>
+     </li>
+     </ul>
+     </div>
+     <br>
+     <br>
+     <div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;text-align:left;">
+<h3 style="text-align:center;">Hua Mei (花美)</h3>
+     <ul>
+       <li>Nom : Hua Mei</li>
+       <li>Sexe : féminin</li>
+       <li>Âge : 40 ans</li>
+       <li>Ethnie : chinoise</li>
+       <li>Profession : héros, scientifique</li>
+       <li>Description : La mère de Li Hui, Hu Jie et Min Li, un héros de Perle.</li>
+       <li>Personnalité :<ul>
+       <li>Gentillesse, Hua Mei a une tonne de gentillesse envers ses enfants et tout le monde. Hua Mei est toujours très gentille avec Min Li, Li Hui et Hu Jie aussi.</li>
+       <li>Honnête, Hua Mei est très honnête lorsqu'elle fait des choses. Elle dira son erreur et s'en excusera et ne mentira jamais.</li>
+       <li>Intelligent, Hua Mei est très intelligent et intelligent. Elle pouvait résoudre tous les problèmes auxquels elle était confrontée, où qu'elle se trouve et de toute façon.</li>
+         </ul>
+       </li>
+       <li>Faiblesse<ul>
+       <li>Vulnérable, Hua Mei est très vulnérable aux cibles, à la maladie et est souvent exploitée de manière inattendue.</li>
+         </ul>
+       </li>
+       <li>Puissance<ul>
+         <li>Ingénierie, Hua Mei pouvait créer n'importe quel type d'objet qu'elle voulait.</li>
+         </ul>
+       </li>
+       <li>Gadget<ul>
+       <li>Solidizer, Hua Mei pouvait imprimer n'importe quel type d'objets et d'éléments qu'elle fabriquait à utiliser.</li>
+     </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;text-align:left;">
+     <h3 style="text-align:center;">Ming Hao (明豪)</h3>
+     <ul>
+       <li>Nom : Ming Hao</li>
+       <li>Sexe : masculin</li>
+       <li>Âge : 40 ans</li>
+       <li>Ethnie : chinoise</li>
+       <li>Profession : héros, scientifique</li>
+       <li>Description : Le père des trois frères et sœurs chinois, Li Hui, Hu Jie et Min Li, un héros de Perle.</li>
+       <li>Personnalité : <ul>
+       <li>Protecteur, Ming Hao est très protecteur envers ses enfants, Min Li, Hu Jie et Li Hui. Il protège toujours ses enfants des ennuis et des préjudices.</li>
+       <li> Gentil, Ming Hao est très gentil avec ses enfants et ses amis. Il utilise toujours des mots gentils aussi.</li>
+       <li>Utile, Ming Hao est très utile. Ming Hao a toujours aidé avec tout ce qu'il pouvait, quoi qu'il arrive.</li>
+         </ul>
+       </li>
+       <li>Faiblesse<ul>
+         <li>Oublié, Ming Hao est très oublieux et oublie toujours les choses dont il avait besoin.</li>
+         </ul>
+       </li>
+       <li>Puissance<ul>
+       <li>Super force, Ming Hao a une super force et peut frapper et soulever tout ce qu'il veut.</li>
+         </ul>
+       </li>
+       <li>Gadget<ul>
+         <li>Gants spéciaux, Ming Hao a des gants spéciaux qui permettent à Ming Hao d'utiliser une super force.</li>
+         </ul>
+       </li>
+     </ul>
+    </div>
+  </div>
+</div>
+
+<div id="THA" class="tabcontent">
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:1px;">
+<h3>Teenager Heroes: Adult</h3>
+</div>
+<br>
+ <div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+    <h1>Characters</h1>
+<p>Teenager Heroes book series featured many characters across many stories and seasons. Teenager Heroes book series contains many awesome designed character developed by Teenager Heroes team. All of our characters across all of Teenager Heroes stories is listed here:</p>
+</div>
+<br>
+<br>
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;text-align:left;">
+<h3 style="text-align:center;">Hu Jie（虎杰）</h3>
+<ul>
+   <li>Nom : Hu Jie</li>
+<li>Sexe : masculin</li>
+<li>Âge : 14 ans</li>
+<li>Ethnie : chinoise</li>
+<li>Profession : Héros</li>
+<li>Description : Hu Jie, un héros courageux et rapide dans Teenager Heroes. Le frère cadet de Li Hui.</li>
+<li>Personnalité :
+   <ul>
+<li>Il est courageux. Il a protégé sa sœur lorsqu'ils ont rencontré des problèmes et a également osé affronter de vilains méchants.</li>
+<li>Il est aussi rapide à faire des choses mais très impatient d'attendre.</li>
+<li>Joueur, il pouvait être joueur lorsqu'il faisait des choses importantes. </li>
+<li>Amusant, il adore faire rire tout le monde, surtout sa sœur.</li>
+   </ul>
+   </li>
+<li>Point faible :
+   <ul>
+<li>Impatient, il est impatient la plupart du temps et ne pouvait pas attendre les autres.</li>
+   </ul>
+<li>Puissance :
+<ul>
+   <li>Vitesse
+   <li>En courant, il pouvait courir très vite d'un emplacement A à un emplacement B en peu de temps. Il pouvait courir aussi vite que l'éclair. </li>
+   <li>Tornade, il pourrait courir très vite pour créer une petite tornade à l'intérieur d'une petite zone qui créera des vents forts. </li>
+   <li>Générateur d'énergie, il pourrait générer de l'énergie électrique en utilisant sa vitesse, ce qui pourrait restaurer un bâtiment hors tension.</li>
+   </ul>
+   </li>
+<li>Gadget :
+   <ul>
+<li>Bouclier, il pouvait se protéger des attaques d'ennemis et de méchants en se cachant derrière son bouclier.</li>
+   </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+    <div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+   <h3 style="text-align:center;">Li Hui （丽惠）</h3>
+   <ul>
+     <li>Nom : Li Hui</li>
+     <li>Sexe : féminin</li>
+     <li>Âge : 14 ans</li>
+     <li>Ethnie : chinoise</li>
+   <li>Profession : Héros</li>
+   <li>Description : Li Hui, la sœur aînée de Hu Jie. Un héros timide mais intelligent dans Teenager Heroes. </li>
+   <li>Personnalité :
+     <ul>
+     <li>Li Hui est intelligente, elle résout facilement n'importe quel problème difficile.</li>
+     <li>Li Hui est aussi timide, elle a peur de la plupart des gens qu'elle rencontre.</li>
+     <li>Douce et attentionnée, elle pouvait être prudente lorsqu'elle s'occupait de son jeune frère.</li>
+     </ul>
+   </li>
+   <li>Point faible :
+     <ul>
+     <li>Timide, elle a peur d'affronter la plupart des ennemis. Elle est facilement effrayée par des ennemis effrayants.</li>
+     </ul>
+   </li>
+<li>Puissance
+   <ul>
+     <li>Technologie
+       <ul>
+<li>En informatique, elle pourrait faire de l'informatique, comme configurer un ordinateur, etc. Elle pourrait configurer un nouvel ordinateur pour faire ce dont elle a besoin.</li>
+<li>En piratant, elle pourrait pirater d'autres infrastructures technologiques et en faire des logiciels inaccessibles ou non sécurisés.</li>
+       </ul>
+     </li>
+   </ul>
+   </li>
+<li>Gadget
+   <ul>
+<li>Bots, elle a 2 bots qui l'accompagnent à tout moment et qui pourraient l'aider à transporter des choses, à la défendre, etc. Elle pourrait programmer les bots pour qu'ils fassent tout ce dont elle a besoin.</li>
+   </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+ <div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+   <h3 style="text-align:center;">Min Li (敏丽)</h3>
+   <ul>
+   <li>Nom : Min Li</li>
+   <li>Sexe : féminin</li>
+   <li>Âge : 21 ans</li>
+   <li>Ethnie : chinoise</li>
+   <Li>Profession : Héros</li>
+   <li>Description : Min Li, la sœur de Li Hui et Hu Jie est une héroïne et une étudiante universitaire.</li>
+   <li>Personnalité : <ul>
+     <li>Min Li est intelligente, elle a toujours un moyen de résoudre les problèmes auxquels elle est confrontée.</li>
+     <li>Min Li est prudente, elle prend toujours soin de ses jeunes frères et sœurs, quoi qu'il arrive.</li>
+     <li>Min Li a aussi de bonnes manières, elle est toujours respectueuse et polie envers tout le monde et leurs sentiments.</li>
+     </ul>
+   </li>
+   <li>Faiblesse<ul>
+   <li>Lent, Min Li est très lent à tout faire, ce qui facilite l'évasion des méchants.</li>
+     </ul>
+   </li>
+   <li>Puissance<ul>
+   <li>Créatif<ul>
+   <li>En dessinant, Min Li pouvait dessiner tout ce qu'elle voulait et en faire un produit physique en quelques minutes.</li>
+   <li>Conception, Min Li est très douée pour la conception d'objets. Min Li pouvait concevoir n'importe quel objet avec son pouvoir.</li>
+     </ul>
+     </li>
+     </ul>
+     </li>
+   <li>Gadget<ul>
+   <li>Stylo de dessin, c'est un stylo permettant à Min Li de dessiner tout ce qu'elle veut et de le transformer en réalité.</li>
+     </ul>
+     </li>
+     </ul>
+     </div>
+     <br>
+     <br>
+ <div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+<h3 style="text-align:center;">Hua Mei (花美)</h3>
+     <ul>
+       <li>Nom : Hua Mei</li>
+       <li>Sexe : féminin</li>
+       <li>Âge : 40 ans</li>
+       <li>Ethnie : chinoise</li>
+       <li>Profession : héros, scientifique</li>
+       <li>Description : La mère de Li Hui, Hu Jie et Min Li, un héros de Perle.</li>
+       <li>Personnalité :<ul>
+       <li>Gentillesse, Hua Mei a une tonne de gentillesse envers ses enfants et tout le monde. Hua Mei est toujours très gentille avec Min Li, Li Hui et Hu Jie aussi.</li>
+       <li>Honnête, Hua Mei est très honnête lorsqu'elle fait des choses. Elle dira son erreur et s'en excusera et ne mentira jamais.</li>
+       <li>Intelligent, Hua Mei est très intelligent et intelligent. Elle pouvait résoudre tous les problèmes auxquels elle était confrontée, où qu'elle se trouve et de toute façon.</li>
+         </ul>
+       </li>
+       <li>Faiblesse<ul>
+       <li>Vulnérable, Hua Mei est très vulnérable aux cibles, à la maladie et est souvent exploitée de manière inattendue.</li>
+         </ul>
+       </li>
+       <li>Puissance<ul>
+         <li>Ingénierie, Hua Mei pouvait créer n'importe quel type d'objet qu'elle voulait.</li>
+         </ul>
+       </li>
+       <li>Gadget<ul>
+       <li>Solidizer, Hua Mei pouvait imprimer n'importe quel type d'objets et d'éléments qu'elle fabriquait à utiliser.</li>
+     </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+ <div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+     <h3 style="text-align:center;">Ming Hao (明豪)</h3>
+     <ul>
+       <li>Nom : Ming Hao</li>
+       <li>Sexe : masculin</li>
+       <li>Âge : 40 ans</li>
+       <li>Ethnie : chinoise</li>
+       <li>Profession : héros, scientifique</li>
+       <li>Description : Le père des trois frères et sœurs chinois, Li Hui, Hu Jie et Min Li, un héros de Perle.</li>
+       <li>Personnalité : <ul>
+       <li>Protecteur, Ming Hao est très protecteur envers ses enfants, Min Li, Hu Jie et Li Hui. Il protège toujours ses enfants des ennuis et des préjudices.</li>
+       <li> Gentil, Ming Hao est très gentil avec ses enfants et ses amis. Il utilise toujours des mots gentils aussi.</li>
+       <li>Utile, Ming Hao est très utile. Ming Hao a toujours aidé avec tout ce qu'il pouvait, quoi qu'il arrive.</li>
+         </ul>
+       </li>
+       <li>Faiblesse<ul>
+         <li>Oublié, Ming Hao est très oublieux et oublie toujours les choses dont il avait besoin.</li>
+         </ul>
+       </li>
+       <li>Puissance<ul>
+       <li>Super force, Ming Hao a une super force et peut frapper et soulever tout ce qu'il veut.</li>
+         </ul>
+       </li>
+       <li>Gadget<ul>
+         <li>Gants spéciaux, Ming Hao a des gants spéciaux qui permettent à Ming Hao d'utiliser une super force.</li>
+         </ul>
+       </li>
+     </ul>
+    </div>
+  </div>
+</div>
+
+<div id="VRTH" class="tabcontent">
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:1px;">
+<h3>VR Teenager Heroes</h3>
+</div>
+<br>
+  <div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;">
+    <h1>Characters</h1>
+<p>Teenager Heroes book series featured many characters across many stories and seasons. Teenager Heroes book series contains many awesome designed character developed by Teenager Heroes team. All of our characters across all of Teenager Heroes stories is listed here:</p>
+</div>
+<br>
+<br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;text-align:left;">
+<h3 style="text-align:center;">Hu Jie（虎杰）</h3>
+<ul>
+   <li>Nom : Hu Jie</li>
+<li>Sexe : masculin</li>
+<li>Âge : 14 ans</li>
+<li>Ethnie : chinoise</li>
+<li>Profession : Héros</li>
+<li>Description : Hu Jie, un héros courageux et rapide dans Teenager Heroes. Le frère cadet de Li Hui.</li>
+<li>Personnalité :
+   <ul>
+<li>Il est courageux. Il a protégé sa sœur lorsqu'ils ont rencontré des problèmes et a également osé affronter de vilains méchants.</li>
+<li>Il est aussi rapide à faire des choses mais très impatient d'attendre.</li>
+<li>Joueur, il pouvait être joueur lorsqu'il faisait des choses importantes. </li>
+<li>Amusant, il adore faire rire tout le monde, surtout sa sœur.</li>
+   </ul>
+   </li>
+<li>Point faible :
+   <ul>
+<li>Impatient, il est impatient la plupart du temps et ne pouvait pas attendre les autres.</li>
+   </ul>
+<li>Puissance :
+<ul>
+   <li>Vitesse
+   <li>En courant, il pouvait courir très vite d'un emplacement A à un emplacement B en peu de temps. Il pouvait courir aussi vite que l'éclair. </li>
+   <li>Tornade, il pourrait courir très vite pour créer une petite tornade à l'intérieur d'une petite zone qui créera des vents forts. </li>
+   <li>Générateur d'énergie, il pourrait générer de l'énergie électrique en utilisant sa vitesse, ce qui pourrait restaurer un bâtiment hors tension.</li>
+   </ul>
+   </li>
+<li>Gadget :
+   <ul>
+<li>Bouclier, il pouvait se protéger des attaques d'ennemis et de méchants en se cachant derrière son bouclier.</li>
+   </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;text-align:left;">
+   <h3 style="text-align:center;">Li Hui （丽惠）</h3>
+   <ul>
+     <li>Nom : Li Hui</li>
+     <li>Sexe : féminin</li>
+     <li>Âge : 14 ans</li>
+     <li>Ethnie : chinoise</li>
+   <li>Profession : Héros</li>
+   <li>Description : Li Hui, la sœur aînée de Hu Jie. Un héros timide mais intelligent dans Teenager Heroes. </li>
+   <li>Personnalité :
+     <ul>
+     <li>Li Hui est intelligente, elle résout facilement n'importe quel problème difficile.</li>
+     <li>Li Hui est aussi timide, elle a peur de la plupart des gens qu'elle rencontre.</li>
+     <li>Douce et attentionnée, elle pouvait être prudente lorsqu'elle s'occupait de son jeune frère.</li>
+     </ul>
+   </li>
+   <li>Point faible :
+     <ul>
+     <li>Timide, elle a peur d'affronter la plupart des ennemis. Elle est facilement effrayée par des ennemis effrayants.</li>
+     </ul>
+   </li>
+<li>Puissance
+   <ul>
+     <li>Technologie
+       <ul>
+<li>En informatique, elle pourrait faire de l'informatique, comme configurer un ordinateur, etc. Elle pourrait configurer un nouvel ordinateur pour faire ce dont elle a besoin.</li>
+<li>En piratant, elle pourrait pirater d'autres infrastructures technologiques et en faire des logiciels inaccessibles ou non sécurisés.</li>
+       </ul>
+     </li>
+   </ul>
+   </li>
+<li>Gadget
+   <ul>
+<li>Bots, elle a 2 bots qui l'accompagnent à tout moment et qui pourraient l'aider à transporter des choses, à la défendre, etc. Elle pourrait programmer les bots pour qu'ils fassent tout ce dont elle a besoin.</li>
+   </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;text-align:left;">
+   <h3 style="text-align:center;">Min Li (敏丽)</h3>
+   <ul>
+   <li>Nom : Min Li</li>
+   <li>Sexe : féminin</li>
+   <li>Âge : 21 ans</li>
+   <li>Ethnie : chinoise</li>
+   <Li>Profession : Héros</li>
+   <li>Description : Min Li, la sœur de Li Hui et Hu Jie est une héroïne et une étudiante universitaire.</li>
+   <li>Personnalité : <ul>
+     <li>Min Li est intelligente, elle a toujours un moyen de résoudre les problèmes auxquels elle est confrontée.</li>
+     <li>Min Li est prudente, elle prend toujours soin de ses jeunes frères et sœurs, quoi qu'il arrive.</li>
+     <li>Min Li a aussi de bonnes manières, elle est toujours respectueuse et polie envers tout le monde et leurs sentiments.</li>
+     </ul>
+   </li>
+   <li>Faiblesse<ul>
+   <li>Lent, Min Li est très lent à tout faire, ce qui facilite l'évasion des méchants.</li>
+     </ul>
+   </li>
+   <li>Puissance<ul>
+   <li>Créatif<ul>
+   <li>En dessinant, Min Li pouvait dessiner tout ce qu'elle voulait et en faire un produit physique en quelques minutes.</li>
+   <li>Conception, Min Li est très douée pour la conception d'objets. Min Li pouvait concevoir n'importe quel objet avec son pouvoir.</li>
+     </ul>
+     </li>
+     </ul>
+     </li>
+   <li>Gadget<ul>
+   <li>Stylo de dessin, c'est un stylo permettant à Min Li de dessiner tout ce qu'elle veut et de le transformer en réalité.</li>
+     </ul>
+     </li>
+     </ul>
+     </div>
+     <br>
+     <br>
+     <div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;text-align:left;">
+<h3 style="text-align:center;">Hua Mei (花美)</h3>
+     <ul>
+       <li>Nom : Hua Mei</li>
+       <li>Sexe : féminin</li>
+       <li>Âge : 40 ans</li>
+       <li>Ethnie : chinoise</li>
+       <li>Profession : héros, scientifique</li>
+       <li>Description : La mère de Li Hui, Hu Jie et Min Li, un héros de Perle.</li>
+       <li>Personnalité :<ul>
+       <li>Gentillesse, Hua Mei a une tonne de gentillesse envers ses enfants et tout le monde. Hua Mei est toujours très gentille avec Min Li, Li Hui et Hu Jie aussi.</li>
+       <li>Honnête, Hua Mei est très honnête lorsqu'elle fait des choses. Elle dira son erreur et s'en excusera et ne mentira jamais.</li>
+       <li>Intelligent, Hua Mei est très intelligent et intelligent. Elle pouvait résoudre tous les problèmes auxquels elle était confrontée, où qu'elle se trouve et de toute façon.</li>
+         </ul>
+       </li>
+       <li>Faiblesse<ul>
+       <li>Vulnérable, Hua Mei est très vulnérable aux cibles, à la maladie et est souvent exploitée de manière inattendue.</li>
+         </ul>
+       </li>
+       <li>Puissance<ul>
+         <li>Ingénierie, Hua Mei pouvait créer n'importe quel type d'objet qu'elle voulait.</li>
+         </ul>
+       </li>
+       <li>Gadget<ul>
+       <li>Solidizer, Hua Mei pouvait imprimer n'importe quel type d'objets et d'éléments qu'elle fabriquait à utiliser.</li>
+     </ul>
+   </li>
+   </ul>
+   </div>
+   <br>
+   <br>
+   <div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;text-align:left;">
+     <h3 style="text-align:center;">Ming Hao (明豪)</h3>
+     <ul>
+       <li>Nom : Ming Hao</li>
+       <li>Sexe : masculin</li>
+       <li>Âge : 40 ans</li>
+       <li>Ethnie : chinoise</li>
+       <li>Profession : héros, scientifique</li>
+       <li>Description : Le père des trois frères et sœurs chinois, Li Hui, Hu Jie et Min Li, un héros de Perle.</li>
+       <li>Personnalité : <ul>
+       <li>Protecteur, Ming Hao est très protecteur envers ses enfants, Min Li, Hu Jie et Li Hui. Il protège toujours ses enfants des ennuis et des préjudices.</li>
+       <li> Gentil, Ming Hao est très gentil avec ses enfants et ses amis. Il utilise toujours des mots gentils aussi.</li>
+       <li>Utile, Ming Hao est très utile. Ming Hao a toujours aidé avec tout ce qu'il pouvait, quoi qu'il arrive.</li>
+         </ul>
+       </li>
+       <li>Faiblesse<ul>
+         <li>Oublié, Ming Hao est très oublieux et oublie toujours les choses dont il avait besoin.</li>
+         </ul>
+       </li>
+       <li>Puissance<ul>
+       <li>Super force, Ming Hao a une super force et peut frapper et soulever tout ce qu'il veut.</li>
+         </ul>
+       </li>
+       <li>Gadget<ul>
+         <li>Gants spéciaux, Ming Hao a des gants spéciaux qui permettent à Ming Hao d'utiliser une super force.</li>
+         </ul>
+       </li>
+     </ul>
+    </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script src="announcement.js"></script>
+<!-- Put this at the end of the <body> tag -->
+<script src="https://swetrix.org/swetrix.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    swetrix.init('tUOZrSzLs6uA')
+    swetrix.trackViews()
+  })
+</script>
+<noscript>
+  <img
+    src="https://api.swetrix.com/log/noscript?pid=tUOZrSzLs6uA"
+    alt=""
+    referrerpolicy="no-referrer-when-downgrade"
+  />
+</noscript>
+
+</body>
+</html> 
